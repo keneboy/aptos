@@ -1,0 +1,22 @@
+@mixin Flex($content:stretch, $items:stretch) {
+    display: flex;
+    justify-content: $content ;
+    align-items: $items;
+}
+@mixin PrimaryHeading($letter:.6rem){
+    font-family: var(--font-subheaders), serif;
+    font-weight: 700;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: $letter;
+    color: var(--main);
+}
+@mixin secondaryHeading($color:#fff, $font: 5.8rem){
+    font-size: $font;
+    margin-bottom:3rem;
+    line-height: 1.15em;
+    font-family: var(--font-headers), serif;
+    font-weight: 700;
+    word-wrap: break-word;
+    color:$color;
+}

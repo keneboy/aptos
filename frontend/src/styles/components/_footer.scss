@@ -1,0 +1,41 @@
+footer{
+   background: #333;
+   @include Flex(stretch, center);
+   padding:2rem 0;
+   flex-direction: column;
+   & ul.footer_c{
+    @include Flex(space-between, center);
+    max-width:60rem;
+    width:100%;
+    margin-bottom:1rem;
+       & li{
+
+           & img{
+               width:8rem;
+           }
+           & ul{
+            @include Flex(stretch, center);
+            & li{
+                width:5rem;
+                height:5rem;
+                border-radius: 50%;
+                border:1px solid rgba(255,255,255,.4);
+                @include Flex(center, center);
+                &:first-child{
+                   margin-right:1.5rem;     
+                }
+                & .tweet{
+                    font-size: 3rem;
+                    color:var(--white);
+                   
+                }
+            }
+           }
+       }
+   }  
+    & p.copyright{
+        color:var(--white);
+        font-style: italic;
+        font-size: 1.4rem;
+    }   
+}
